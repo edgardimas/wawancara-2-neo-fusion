@@ -1,0 +1,12 @@
+Client-Server app for simple chat-bot:
+  - Server (backend): 
+	- Create DB 
+	- Connection to AI provider
+	- API for frontEnd
+	
+  - Client (frontEnd): 
+	- User input systemPrompt, userMessage
+	- Chat history view
+	- The bot MUST be aware of chat-history and current date-time
+
+    kesimpen, tapi kerestart lagi ada, 

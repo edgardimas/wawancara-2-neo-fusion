@@ -1,0 +1,135 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* .chat-container {
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+} */
+
+.chat-container {
+  margin-left: 260px; /* same as sidebar width */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.messages {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.user {
+  text-align: right;
+  margin: 5px 0;
+  color: blue;
+}
+
+.bot {
+  text-align: left;
+  margin: 5px 0;
+  color: green;
+}
+
+.input-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+#msg {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+select {
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  background: #202123;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.chat-item {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background: #343541;
+  cursor: pointer;
+}
+.chat-item:hover {
+  background: #3e3f4b;
+}
+
+.new-chat-btn {
+  background: #10a37f;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
